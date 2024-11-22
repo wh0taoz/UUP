@@ -9,7 +9,7 @@ for (int i = 2; i * i <= broj; i++) {           // da li je broj prost
     }
     return true;
 
-int a = 1, b=1, c = 2        // fibonacijev niz
+int a = 1, b=1, c = 2        
 a = b;
 b = c;
-c = a + b;
+c = a + b;                 // fibonacijev niz
