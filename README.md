@@ -13,3 +13,13 @@ int a = 1, b=1, c = 2
 a = b;
 b = c;
 c = a + b;                 // fibonacijev niz
+
+  // Remove spaces from the string
+    int length = strlen(s);
+    int index = 0;
+    for (int i = 0; i < length; i++) {
+        if (s[i] != ' ') {
+            s[index++] = s[i];
+        }
+    }
+    s[index] = '\0';  // Null-terminate the cleaned string
