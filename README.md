@@ -14,7 +14,7 @@ a = b;
 b = c;
 c = a + b;                 // fibonacijev niz
 
-  // Remove spaces from the string
+ Remove spaces from the string:
     int length = strlen(s);
     int index = 0;
     for (int i = 0; i < length; i++) {
@@ -23,3 +23,21 @@ c = a + b;                 // fibonacijev niz
         }
     }
     s[index] = '\0';  // Null-terminate the cleaned string
+
+
+selection sort:
+
+ for (j = 0; j<n; j++){
+        for (i = 0; i<n; i++){
+            int m = i;
+            for (k = i+1; k<n; k++){
+               if (mat[m][j] > mat[k][j])
+                m = k;
+            }
+            if (m != i){
+                t = mat[i][j];
+                mat[i][j] = mat[m][j];
+                mat[m][j] = t;
+            }
+        }
+    }
